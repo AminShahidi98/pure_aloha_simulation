@@ -1,4 +1,4 @@
-#Pure ALOHA (without back off)
+# Pure ALOHA (without back off)
 
 This code simulates a pure ALOHA system but without back off policy. Each thread is a sender. At first program asks you for frame transmition time and duration of simulation(both in seconds).
 Program consists of one crutial function which acts like a sender in the system.
@@ -33,7 +33,7 @@ if q.empty():
 else:
     collision = True
 ```
-At the end we calculate the throughput of system using:
+At the end before killing all thrread using ```sys.exit()``` ,we calculate the throughput of system using:
 ```python
 print("Throughput(kbps): " + str((successfulFrames)/duration))
 ```
